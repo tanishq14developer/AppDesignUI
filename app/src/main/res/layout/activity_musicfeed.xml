@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".musicfeed">
+    <RelativeLayout
+        android:id="@+id/musictrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/your"
+        android:paddingVertical="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/yantramanavregular"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="MUSIC"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/yantramanavblack"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="TRACK"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_asset_15" />
+    <RelativeLayout
+        android:id="@+id/searchbarbig"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/musictrack"
+        android:background="@drawable/drawable_yellow">
+        <RelativeLayout
+            android:id="@+id/searchbar"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/searchbar_box"
+            android:layout_marginStart="10dp">
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_searchicon" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/imageView36"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_screen6_love" />
+
+            <ImageView
+                android:id="@+id/imageView40"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_screen6_add" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+
+        android:id="@+id/playlists"
+        android:layout_below="@id/searchbarbig"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Playlists"
+        android:textColor="#3d316a"
+        android:fontFamily="@font/yantramanavblack"
+        android:textSize="24sp"/>
+    <HorizontalScrollView
+        android:id="@+id/scroll"
+        android:layout_below="@id/playlists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playlists"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/box1"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/squareshape"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:weightSum="3">
+                <ImageView
+                    android:id="@+id/playbutton1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/ic_play" />
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="12 Tracks"
+                    android:layout_marginTop="10dp"
+                    android:paddingVertical="5dp"
+                    android:textSize="14sp"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/squareshape"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:weightSum="3">
+                <ImageView
+                    android:id="@+id/playbutton2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/ic_play" />
+                <TextView
+                    android:id="@+id/tracks1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="12 Tracks"
+                    android:layout_marginTop="10dp"
+                    android:paddingVertical="5dp"
+                    android:textSize="14sp"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/squareshape"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:weightSum="3">
+                <ImageView
+                    android:id="@+id/playbutton3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/ic_play" />
+                <TextView
+                    android:id="@+id/tracks3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="12 Tracks"
+                    android:layout_marginTop="10dp"
+                    android:paddingVertical="5dp"
+                    android:textSize="14sp"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>.
+    </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:id="@+id/nameofplaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scroll"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="My playlist"
+            android:fontFamily="@font/yantramanavregular"
+            android:textColor="#312461"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:fontFamily="@font/yantramanavregular"
+            android:textColor="#312461"
+            android:text="Favourites" />
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Winter"
+            android:fontFamily="@font/yantramanavregular"
+            android:textColor="#312461"
+            android:gravity="center"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/lineplaylist"
+        android:layout_below="@id/nameofplaylist"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="5dp"
+        android:background="#3d316a"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/artists"
+        android:layout_below="@id/lineplaylist"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Artists"
+        android:textColor="#3d316a"
+        android:textSize="24sp"
+        android:fontFamily="@font/yantramanavblack"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/artists">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bacground_boxes2"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:id="@+id/imageView41"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/ic_music_screen6" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/yantramanavblack"
+                android:text="John Doe"
+                android:textColor="#323b6f"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/yantramanavregular"
+                android:text="1 Albums | 23 Songs"
+                android:textColor="#323b6f"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bacground_boxes2"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp">
+
+            <ImageView
+                android:id="@+id/copy1"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/ic_music_screen6" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textcopy1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/yantramanavblack"
+                    android:text="John Doe"
+                    android:textColor="#323b6f"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/textViewcopy1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/yantramanavregular"
+                    android:text="1 Albums | 23 Songs"
+                    android:textColor="#323b6f"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bacground_boxes2"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp">
+
+            <ImageView
+                android:id="@+id/copy2"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/ic_music_screen6" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textcopy2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/yantramanavblack"
+                    android:text="John Doe"
+                    android:textColor="#323b6f"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/textViewcopy2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/yantramanavregular"
+                    android:text="1 Albums | 23 Songs"
+                    android:textColor="#323b6f"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/lineplaylist2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="10dp"
+        android:background="#087fa6"
+        android:layout_marginTop="25dp" />
+    <RelativeLayout
+        android:id="@+id/arrow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artists"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/playkaru"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="35dp"
+            android:src="@drawable/ic_playmusic" />
+        <ImageView
+            android:id="@+id/musicsnext"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/playkaru"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="35dp"
+            android:src="@drawable/ic_playmusic" />
+        <ImageView
+            android:id="@+id/yourcontavtlist"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="35dp"
+            android:layout_below="@id/musicsnext"
+            android:src="@drawable/ic_playmusic" />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
